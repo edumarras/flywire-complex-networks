@@ -1,4 +1,4 @@
-# FlyWire Complex Networks
+# A biologia está na rede? 
 
 Repositório do projeto desenvolvido para a disciplina **MO438A — Redes Complexas**, do Instituto de Computação da Unicamp.
 
