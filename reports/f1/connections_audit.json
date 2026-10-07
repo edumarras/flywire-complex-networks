@@ -1,0 +1,50 @@
+{
+  "input_file": "data/raw/connections_princeton.csv.gz",
+  "file_size_mb": 65.28549289703369,
+  "schema": {
+    "pre_root_id": "BIGINT",
+    "post_root_id": "BIGINT",
+    "neuropil": "VARCHAR",
+    "syn_count": "BIGINT",
+    "nt_type": "VARCHAR"
+  },
+  "raw": {
+    "rows": 5342446,
+    "unique_pre_nodes": 137518,
+    "unique_post_nodes": 130183,
+    "unique_nodes": 138584
+  },
+  "syn_count": {
+    "min": 1,
+    "max": 2633,
+    "mean": 9.48379225545752,
+    "median": 6.0,
+    "total": 50666648,
+    "rows_lt_5": 1588394,
+    "rows_ge_5": 3754052
+  },
+  "pairs": {
+    "unique_directed_pairs": 3732460,
+    "additional_duplicate_rows": 1609986,
+    "repeated_pairs": 1002488,
+    "max_rows_per_pair": 20
+  },
+  "aggregated": {
+    "pairs": 3732460,
+    "pairs_lt_5": 0,
+    "pairs_ge_5": 3732460,
+    "min_weight": 5,
+    "max_weight": 2633,
+    "mean_weight": 13.574599057993924,
+    "total_synapses": 50666648
+  },
+  "self_loops": {
+    "raw_rows": 0,
+    "unique_pairs": 0
+  },
+  "missing": {
+    "pre_root_id": 0,
+    "post_root_id": 0,
+    "syn_count": 0
+  }
+}

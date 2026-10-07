@@ -1,0 +1,28 @@
+{
+  "sample_size": 100,
+  "seed": 42,
+  "directed_largest_scc": {
+    "vertices": 127536,
+    "edges": 3667720,
+    "sampled_sources": 100,
+    "estimated_mean_distance": 4.2027626141843415,
+    "approx_ci95_low": 4.127401689510623,
+    "approx_ci95_high": 4.27812353885806,
+    "maximum_distance_observed": 11,
+    "mean_bfs_seconds": 0.043634891997789964,
+    "estimated_exact_minutes": 92.75032643050234,
+    "estimated_exact_hours": 1.5458387738417056
+  },
+  "undirected_giant_component": {
+    "vertices": 136997,
+    "edges": 3420002,
+    "sampled_sources": 100,
+    "estimated_mean_distance": 3.791138354404508,
+    "approx_ci95_low": 3.7125209111118096,
+    "approx_ci95_high": 3.8697557976972066,
+    "maximum_distance_observed": 11,
+    "mean_bfs_seconds": 0.09383934399986174,
+    "estimated_exact_minutes": 214.26181016581765,
+    "estimated_exact_hours": 3.571030169430294
+  }
+}

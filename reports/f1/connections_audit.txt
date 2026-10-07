@@ -1,0 +1,44 @@
+Auditoria das conexões - FlyWire FAFB v783
+
+Arquivo de entrada:
+data/raw/connections_princeton.csv.gz
+Tamanho: 65,29 MB
+
+Dados brutos:
+Número de linhas: 5.342.446
+pre_root_id únicos: 137.518
+post_root_id únicos: 130.183
+Nós únicos: 138.584
+
+syn_count:
+Mínimo: 1
+Máximo: 2633
+Média: 9,4838
+Mediana: 6.0
+Total de sinapses: 50.666.648
+Linhas com syn_count < 5: 1.588.394
+Linhas com syn_count >= 5: 3.754.052
+
+Pares direcionados:
+Pares únicos: 3.732.460
+Linhas duplicadas adicionais: 1.609.986
+Pares repetidos: 1.002.488
+Máximo de linhas para um par: 20
+
+Depois da agregação:
+Pares: 3.732.460
+Pares < 5: 0
+Pares >= 5: 3.732.460
+Peso mínimo: 5
+Peso máximo: 2633
+Peso médio: 13,5746
+Total de sinapses: 50.666.648
+
+Laços:
+Linhas com laço: 0
+Pares de laço únicos: 0
+
+Valores ausentes:
+pre_root_id: 0
+post_root_id: 0
+syn_count: 0

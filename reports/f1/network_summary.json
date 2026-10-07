@@ -1,0 +1,42 @@
+{
+  "graph": "FlyWire FAFB v783",
+  "representation": {
+    "directed": true,
+    "weighted": true,
+    "vertices": 139255,
+    "directed_edges": 3732460,
+    "isolated_vertices": 671
+  },
+  "degree": {
+    "mean_in_degree": 26.803059136117195,
+    "mean_out_degree": 26.803059136117195,
+    "mean_total_degree": 53.60611827223439
+  },
+  "density": {
+    "directed": 0.00019247604475359554,
+    "undirected_projection": 0.00035297055629979305
+  },
+  "reciprocity": 0.16615851208050456,
+  "components": {
+    "weak_count": 875,
+    "largest_weak": 136997,
+    "largest_weak_fraction": 0.9837851423647266,
+    "strong_count": 11120,
+    "largest_strong": 127536,
+    "largest_strong_fraction": 0.9158450324943449
+  },
+  "undirected_projection": {
+    "edges": 3422370
+  },
+  "clustering": {
+    "convention": "simple unweighted undirected projection",
+    "eligible_vertices_degree_ge_2": 137993,
+    "mean_local_clustering": 0.19827657726650233,
+    "global_transitivity": 0.05461414665605968
+  },
+  "distances": {
+    "average_distance": null,
+    "diameter": null,
+    "status": "computed separately"
+  }
+}

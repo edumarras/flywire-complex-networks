@@ -1,0 +1,12 @@
+{
+  "graph": "FlyWire FAFB v783",
+  "representation": "largest strongly connected component of the directed unweighted graph",
+  "distance_definition": "directed unweighted shortest-path hop count",
+  "vertices": 127536,
+  "edges": 3667720,
+  "ordered_distinct_vertex_pairs": 16265303760,
+  "distance_sum": 68998748153,
+  "average_distance": 4.242081744743266,
+  "diameter": 14,
+  "runtime_seconds": 5021.308266900014
+}

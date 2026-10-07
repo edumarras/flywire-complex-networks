@@ -1,0 +1,45 @@
+FlyWire FAFB v783 - resultados finais da F1
+
+Grafo
+Direcionado: sim
+Ponderado: sim
+
+Vértices: 139.255
+Arestas direcionadas: 3.732.460
+Total de sinapses: 50.666.648
+Vértices isolados: 671
+
+Graus
+Grau médio de entrada: 26,803059
+Grau médio de saída: 26,803059
+Grau médio total: 53,606118
+
+Densidade e reciprocidade
+Densidade direcionada: 0,000192476045
+Reciprocidade: 0,16615851
+
+Componentes
+Componentes fracas: 875
+Maior componente fraca: 136.997
+Fração na maior componente fraca: 98,378514%
+
+Componentes fortes: 11.120
+Maior componente forte: 127.536
+Fração na maior componente forte: 91,584503%
+
+Clusterização
+Projeção simples, não ponderada e não direcionada.
+
+Vértices com grau >= 2: 137.993
+Coeficiente de clusterização local médio: 0,19827658
+Transitividade global: 0,05461415
+
+Distâncias
+Maior componente fortemente conexa do grafo
+direcionado e não ponderado.
+
+Vértices: 127.536
+Arestas: 3.667.720
+
+Distância média exata: 4,2420817447
+Diâmetro exato: 14

@@ -1,0 +1,35 @@
+FlyWire FAFB v783 - análise inicial da rede
+
+Grafo direcionado
+Vértices: 139.255
+Arestas direcionadas: 3.732.460
+Vértices isolados: 671
+
+Graus
+Grau médio de entrada: 26,803059
+Grau médio de saída: 26,803059
+Grau médio total: 53,606118
+
+Densidade
+Densidade direcionada: 0,000192476045
+
+Reciprocidade
+0,16615851
+
+Componentes
+Componentes fracas: 875
+Maior componente fraca: 136.997
+Fração na maior componente fraca: 98,378514%
+
+Componentes fortes: 11.120
+Maior componente forte: 127.536
+Fração na maior componente forte: 91,584503%
+
+Projeção não direcionada
+Arestas: 3.422.370
+Densidade: 0,000352970556
+
+Clusterização
+Vértices com grau >= 2: 137.993
+Clusterização local média: 0,19827658
+Transitividade global: 0,05461415

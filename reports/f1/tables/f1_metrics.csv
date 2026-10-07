@@ -1,0 +1,20 @@
+metric,value,scope
+Vertices,139255.0,Canonical graph
+Directed edges,3732460.0,Canonical graph
+Total synapses,50666648.0,Canonical graph
+Isolated vertices,671.0,Canonical graph
+Mean in-degree,26.803059136117195,Canonical graph
+Mean out-degree,26.803059136117195,Canonical graph
+Mean total degree,53.60611827223439,Canonical graph
+Directed density,0.00019247604475359554,Canonical graph
+Reciprocity,0.16615851208050456,Canonical graph
+Weak components,875.0,Canonical directed graph
+Largest weak component,136997.0,Canonical directed graph
+Largest weak component fraction,0.9837851423647266,Canonical directed graph
+Strong components,11120.0,Canonical directed graph
+Largest strong component,127536.0,Canonical directed graph
+Largest strong component fraction,0.9158450324943449,Canonical directed graph
+Mean local clustering,0.19827657726650233,Simple undirected projection
+Global transitivity,0.05461414665605968,Simple undirected projection
+Average distance,4.242081744743266,Largest directed SCC
+Diameter,14.0,Largest directed SCC

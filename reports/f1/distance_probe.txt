@@ -1,0 +1,49 @@
+FlyWire FAFB v783 - amostragem das distâncias
+
+Número de origens amostradas: 100
+Seed: 42
+
+Maior componente fortemente conexa
+
+Vértices: 127.536
+Arestas: 3.667.720
+
+Distância média estimada:
+4,202763
+
+Intervalo aproximado de 95%:
+[4,127402,
+ 4,278124]
+
+Maior distância observada:
+11
+
+Tempo médio por BFS:
+0,043635 s
+
+Tempo estimado para o cálculo exato:
+92,75 min
+(1,55 h)
+
+
+Maior componente da projeção não direcionada
+
+Vértices: 136.997
+Arestas: 3.420.002
+
+Distância média estimada:
+3,791138
+
+Intervalo aproximado de 95%:
+[3,712521,
+ 3,869756]
+
+Maior distância observada:
+11
+
+Tempo médio por BFS:
+0,093839 s
+
+Tempo estimado para o cálculo exato:
+214,26 min
+(3,57 h)

@@ -1,0 +1,35 @@
+FlyWire FAFB v783 - grafo construído
+
+Representação
+Direcionado: sim
+Ponderado: sim
+
+Nós
+Foram usados todos os root_id presentes em neurons.csv.gz.
+
+Arestas
+pre_root_id -> post_root_id
+peso = soma de syn_count para cada par direcionado
+peso agregado mínimo = 5
+
+Grafo
+Vértices: 139.255
+Arestas: 3.732.460
+Vértices isolados: 671
+
+Pesos
+Mínimo: 5
+Máximo: 2633
+Total de sinapses: 50.666.648
+
+Graus
+Grau médio de entrada: 26,803059
+Grau médio de saída: 26,803059
+Grau médio total: 53,606118
+
+Densidade
+Densidade do grafo direcionado: 0,000192476045
+
+Arquivos
+GraphML: data/processed/flywire_fafb_v783.graphml
+Lista de arestas: data/processed/flywire_fafb_v783_edges.csv.gz

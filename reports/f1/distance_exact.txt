@@ -1,0 +1,24 @@
+FlyWire FAFB v783 - análise exata das distâncias
+
+Representação
+Maior componente fortemente conexa do grafo
+direcionado e não ponderado do FlyWire.
+
+Vértices: 127.536
+Arestas: 3.667.720
+
+Definição de distância
+Número de arestas no menor caminho direcionado.
+
+Como a componente é fortemente conexa, todos os pares
+ordenados de vértices distintos são alcançáveis.
+
+Pares ordenados: 16.265.303.760
+
+Resultados
+Distância média exata: 4,2420817447
+Diâmetro exato: 14
+
+Tempo de execução
+83,69 minutos
+(1,39 horas)

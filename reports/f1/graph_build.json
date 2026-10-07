@@ -1,0 +1,20 @@
+{
+  "graph": "FlyWire FAFB v783",
+  "directed": true,
+  "weighted": true,
+  "node_universe": "all root_id values from neurons.csv.gz",
+  "edge_definition": "directed pair pre_root_id -> post_root_id; weight = sum(syn_count)",
+  "minimum_aggregated_weight": 5,
+  "vertices": 139255,
+  "edges": 3732460,
+  "isolated_vertices": 671,
+  "min_weight": 5,
+  "max_weight": 2633,
+  "total_synapses": 50666648,
+  "mean_in_degree": 26.803059136117195,
+  "mean_out_degree": 26.803059136117195,
+  "mean_total_degree": 53.60611827223439,
+  "directed_density": 0.00019247604475359554,
+  "graphml": "data/processed/flywire_fafb_v783.graphml",
+  "edge_list": "data/processed/flywire_fafb_v783_edges.csv.gz"
+}
