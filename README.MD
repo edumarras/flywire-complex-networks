@@ -8,7 +8,9 @@ O projeto utiliza o conectoma da *Drosophila melanogaster* disponibilizado pelo 
 
 **A biologia está na rede? Um estudo da identidade neuronal a partir do conectoma de Drosophila melanogaster.**
 
-Este repositório reúne os dados, scripts e resultados utilizados no desenvolvimento do projeto.
+O projeto investiga a organização topológica do conectoma cerebral de Drosophila melanogaster e avalia em que medida informações derivadas da conectividade acrescentam capacidade preditiva à identificação biológica dos neurônios.
+
+O conectoma utilizado foi disponibilizado pelo FlyWire e é representado como um grafo dirigido e ponderado, no qual os neurônios correspondem aos nós, as conexões sinápticas às arestas e o peso de cada aresta ao número de sinapses entre dois neurônios.
 
 ## Estrutura do repositório
 
@@ -21,9 +23,11 @@ Este repositório reúne os dados, scripts e resultados utilizados no desenvolvi
 ├── graphml/          # Rede utilizada no projeto em formato GraphML
 │
 ├── reports/
-│   └── f1/
-│       ├── figures/  # Figuras e visualização da rede
-│       └── tables/   # Tabelas geradas na análise
+│   ├── f1/
+│   │   ├── figures/      # Figuras da caracterização inicial
+│   │   └── tables/       # Tabelas da caracterização inicial
+│   │
+│   └── f2/               # Features, modelos, auditorias e resultados da etapa final
 │
 ├── scripts/          # Scripts de auditoria, construção e análise da rede
 │
@@ -32,17 +36,33 @@ Este repositório reúne os dados, scripts e resultados utilizados no desenvolvi
 └── README.MD
 ```
 
-## Entrega Parcial — F1
+## Análises Realizadas
 
-A primeira etapa do projeto consiste na caracterização inicial da rede complexa utilizada no restante do trabalho.
+O projeto inclui:
 
-O repositório contém:
+- construção e caracterização estrutural do conectoma;
 
-- a rede utilizada no projeto em formato **GraphML**;
-- os scripts utilizados na construção e análise da rede;
-- as métricas estruturais solicitadas na Entrega Parcial;
-- as figuras geradas durante a análise;
-- uma visualização complementar da rede.
+- análise de grau, força, densidade, reciprocidade, componentes conexas, clusterização, distâncias e diâmetro;
+
+- comparação com modelos nulos que preservam a sequência de graus;
+
+- análise de organização modular por Leiden e Infomap;
+
+- cálculo de métricas de centralidade e posição modular;
+
+- investigação da relação entre topologia e classificação biológica dos neurônios;
+
+- análise de assortatividade e padrões de mistura entre superclasses;
+
+- construção de atributos topológicos para tarefas de classificação;
+
+- comparação entre atributos biológicos não topológicos (BIO), atributos derivados da rede (REDE) e sua combinação (BIO + REDE);
+
+- avaliação com Regressão Logística e Random Forest;
+
+- controles de robustez envolvendo flow, rewiring com preservação de grau, localização anatômica por neurópilo e transferência entre hemisférios.
+
+A principal métrica preditiva utilizada foi o macro-F1, devido ao forte desbalanceamento entre as superclasses neuronais.
 
 ## Dados
 
@@ -50,6 +70,18 @@ Os dados originais são provenientes do projeto **FlyWire**:
 
 - https://flywire.ai/
 - https://codex.flywire.ai/
+
+Os arquivos originais e parte dos dados processados não são versionados neste repositório devido ao tamanho dos arquivos e às condições de distribuição dos dados. O diretório graphml/ contém a representação da rede utilizada nas análises do projeto.
+
+## Organização dos scripts
+
+Os scripts estão organizados de acordo com as etapas do projeto.
+
+- f1_*: construção da rede e caracterização estrutural inicial;
+
+- f2_*: caracterização topológica avançada, comunidades, construção de features, modelagem preditiva e controles de robustez.
+
+Os arquivos de saída gerados pelos scripts são armazenados principalmente em reports/f1/ e reports/f2/.
 
 ## Autor
 
