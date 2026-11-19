@@ -1,0 +1,8 @@
+leiden_role,ascending,central,descending,endocrine,motor,optic,sensory,sensory_ascending,visual_centrifugal,visual_projection
+R1_ultra_peripheral,309,10903,194,43,36,28949,14054,349,9,59
+R2_peripheral,1255,19125,916,36,73,47126,2397,214,324,6008
+R3_nonhub_connector,128,1347,49,1,0,747,26,0,98,1411
+R4_nonhub_kinless,0,3,0,0,0,0,0,0,4,8
+R5_provincial_hub,13,732,79,0,0,651,0,0,9,23
+R6_connector_hub,11,225,52,0,0,338,0,0,71,167
+R7_kinless_hub,0,0,0,0,0,1,0,0,5,6

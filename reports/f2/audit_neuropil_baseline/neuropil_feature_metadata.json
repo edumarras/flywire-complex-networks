@@ -1,0 +1,15 @@
+{
+  "connection_rows": 5342446,
+  "total_syn_count_from_rows": 50666648.0,
+  "n_nodes": 139255,
+  "n_neuropils": 79,
+  "n_features": 158,
+  "matrix_nnz": 730261,
+  "zero_out_nodes": 1737,
+  "zero_in_nodes": 9072,
+  "feature_definition": "outgoing and incoming syn_count fractions by neuropil, L1-normalized separately by direction",
+  "includes_total_strength": false,
+  "includes_super_class": false,
+  "includes_flow_as_feature": false,
+  "runtime_seconds": 6.3454203605651855
+}

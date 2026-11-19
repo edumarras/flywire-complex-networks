@@ -1,0 +1,166 @@
+{
+  "nodes": 139255,
+  "features": 22,
+  "feature_groups": {
+    "degree_strength": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength"
+    ],
+    "centrality_local": [
+      "local_clustering",
+      "pagerank_weighted",
+      "coreness"
+    ],
+    "modular_leiden": [
+      "leiden_module_size",
+      "leiden_internal_degree_fraction",
+      "leiden_internal_strength_fraction",
+      "leiden_within_module_degree_z",
+      "leiden_within_module_strength_z",
+      "leiden_participation_degree",
+      "leiden_participation_strength"
+    ],
+    "modular_infomap": [
+      "infomap_module_size",
+      "infomap_internal_degree_fraction",
+      "infomap_internal_strength_fraction",
+      "infomap_within_module_degree_z",
+      "infomap_within_module_strength_z",
+      "infomap_participation_degree",
+      "infomap_participation_strength"
+    ]
+  },
+  "feature_sets": {
+    "network_degree_strength": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength"
+    ],
+    "network_plus_centrality": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength",
+      "local_clustering",
+      "pagerank_weighted",
+      "coreness"
+    ],
+    "network_plus_leiden": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength",
+      "local_clustering",
+      "pagerank_weighted",
+      "coreness",
+      "leiden_module_size",
+      "leiden_internal_degree_fraction",
+      "leiden_internal_strength_fraction",
+      "leiden_within_module_degree_z",
+      "leiden_within_module_strength_z",
+      "leiden_participation_degree",
+      "leiden_participation_strength"
+    ],
+    "network_full": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength",
+      "local_clustering",
+      "pagerank_weighted",
+      "coreness",
+      "leiden_module_size",
+      "leiden_internal_degree_fraction",
+      "leiden_internal_strength_fraction",
+      "leiden_within_module_degree_z",
+      "leiden_within_module_strength_z",
+      "leiden_participation_degree",
+      "leiden_participation_strength",
+      "infomap_module_size",
+      "infomap_internal_degree_fraction",
+      "infomap_internal_strength_fraction",
+      "infomap_within_module_degree_z",
+      "infomap_within_module_strength_z",
+      "infomap_participation_degree",
+      "infomap_participation_strength"
+    ],
+    "network_modular_leiden_only": [
+      "leiden_module_size",
+      "leiden_internal_degree_fraction",
+      "leiden_internal_strength_fraction",
+      "leiden_within_module_degree_z",
+      "leiden_within_module_strength_z",
+      "leiden_participation_degree",
+      "leiden_participation_strength"
+    ],
+    "network_modular_infomap_only": [
+      "infomap_module_size",
+      "infomap_internal_degree_fraction",
+      "infomap_internal_strength_fraction",
+      "infomap_within_module_degree_z",
+      "infomap_within_module_strength_z",
+      "infomap_participation_degree",
+      "infomap_participation_strength"
+    ]
+  },
+  "excluded_columns": {
+    "infomap_community": "ID nominal/arbitrário da comunidade; não deve ser tratado como número.",
+    "infomap_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_external_degree_fraction": "Redundante: 1 - infomap_internal_degree_fraction para nós ativos.",
+    "infomap_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_external_strength_fraction": "Redundante: 1 - infomap_internal_strength_fraction para nós ativos.",
+    "infomap_in_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_in_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_in_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_in_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_out_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_out_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_out_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_out_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "infomap_role": "Rótulo categórico R1-R7 derivado de z e participation; redundante.",
+    "isolated": "Determinístico a partir dos graus; não acrescenta informação.",
+    "leiden_community": "ID nominal/arbitrário da comunidade; não deve ser tratado como número.",
+    "leiden_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_external_degree_fraction": "Redundante: 1 - leiden_internal_degree_fraction para nós ativos.",
+    "leiden_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_external_strength_fraction": "Redundante: 1 - leiden_internal_strength_fraction para nós ativos.",
+    "leiden_in_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_in_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_in_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_in_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_out_external_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_out_external_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_out_internal_degree": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_out_internal_strength": "Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas.",
+    "leiden_role": "Rótulo categórico R1-R7 derivado de z e participation; redundante.",
+    "total_degree": "Redundante por construção: in_degree + out_degree.",
+    "total_strength": "Redundante por construção: in_strength + out_strength."
+  },
+  "audit": {
+    "missing_total": 0,
+    "duplicate_root_id": 0,
+    "constant_features": [],
+    "high_spearman_pairs_ge_0_95": 9
+  },
+  "important_methodological_decisions": [
+    "Community IDs are excluded because their numeric values are arbitrary labels, not ordered quantities.",
+    "R1-R7 modular-role labels are excluded because they are deterministic discretizations of within-module z and participation coefficient.",
+    "Exact total/decomposition redundancies are excluded from the ML whitelist; raw descriptive versions remain preserved in the upstream F2 outputs.",
+    "No biological annotation and no super_class label is present in the frozen topological feature table.",
+    "Suggested transformations are metadata only. All scaling, imputation or transformation must be fitted inside the training split/fold during ML."
+  ],
+  "runtime_seconds": 7.845897197723389,
+  "output": "reports/f2/features/node_topological_features.csv.gz"
+}

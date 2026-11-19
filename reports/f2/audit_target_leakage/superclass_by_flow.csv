@@ -1,0 +1,11 @@
+super_class,afferent,efferent,intrinsic
+ascending,1750,0,0
+central,0,0,32381
+descending,0,1305,0
+endocrine,0,80,0
+motor,0,106,4
+optic,0,0,77873
+sensory,16938,0,0
+sensory_ascending,612,0,0
+visual_centrifugal,0,0,522
+visual_projection,0,0,7684

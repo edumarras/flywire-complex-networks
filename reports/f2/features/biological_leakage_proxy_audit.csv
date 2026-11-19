@@ -1,0 +1,10 @@
+column,source,n_unique,coverage_n,coverage_fraction,weighted_purity_to_super_class,reason_excluded
+additional_type(s),consolidated_cell_types,1508,13956,0.10021902265627805,1.0,Fine cell-type taxonomy; direct leakage risk.
+primary_type,consolidated_cell_types,8772,138327,0.9933359663925891,0.9999566245201588,Fine cell-type taxonomy; direct leakage risk.
+sub_class,classification,118,100236,0.7198018024487451,0.9997904944331378,Taxonomic label closely related to super_class.
+class,classification,29,107591,0.7726185774298948,0.9931592791218596,Taxonomic label closely related to super_class.
+hemilineage,classification,214,37542,0.26959175613083913,0.9525597996910128,Biological annotation close to taxonomy; outside the declared BIO baseline.
+group,neurons,629,139255,1.0,0.9160317403324836,Coarse neuron grouping with very high association to super_class; outside declared BIO baseline.
+nerve,classification,8,9647,0.0692757890201429,0.7892609101275008,Annotation strongly tied to specific superclasses; leakage risk.
+flow,classification,3,139255,1.0,0.6902157911744641,Taxonomic/functional grouping directly upstream of super_class.
+nt_type,neurons,6,119597,0.8588345122257729,0.5909011095596043,Final categorical neurotransmitter call excluded in favor of the six probabilistic scores.

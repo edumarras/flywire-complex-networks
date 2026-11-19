@@ -1,0 +1,53 @@
+{
+  "methodology": {
+    "target_annotation": "super_class",
+    "community_association_population": "active non-isolated neurons only",
+    "isolates_excluded_from_nmi_ari": 671,
+    "nmi_normalization": "arithmetic mean of partition entropies",
+    "ari": "standard adjusted Rand index from contingency table",
+    "partition_purity": "sum of dominant superclass count per community / active nodes",
+    "homophily_network": "canonical directed aggregated edge list",
+    "homophily_modes": [
+      "edge_count",
+      "synapse_weight"
+    ],
+    "biology_used_to_fit_communities": false
+  },
+  "nodes": {
+    "total": 139255,
+    "active": 138584,
+    "isolated": 671,
+    "superclasses": 10
+  },
+  "community_association": {
+    "leiden": {
+      "nmi_arithmetic": 0.3330597785714308,
+      "adjusted_rand_index": 0.21295263675646736,
+      "partition_purity": 0.8023220573803613,
+      "role_superclass_nmi": 0.09962531557505978,
+      "communities": 234
+    },
+    "infomap": {
+      "nmi_arithmetic": 0.2261266306996554,
+      "adjusted_rand_index": 0.02593029387580566,
+      "partition_purity": 0.8095378975927957,
+      "role_superclass_nmi": 0.09069875250319034,
+      "communities": 894
+    }
+  },
+  "superclass_mixing": {
+    "edge_count": {
+      "observed_same_fraction": 0.7276002957834781,
+      "expected_same_fraction": 0.36034747182386967,
+      "same_fraction_enrichment": 2.019163037555912,
+      "assortativity": 0.5741442545482822
+    },
+    "synapse_weight": {
+      "observed_same_fraction": 0.7132850785787133,
+      "expected_same_fraction": 0.3455884722145755,
+      "same_fraction_enrichment": 2.0639724294270883,
+      "assortativity": 0.5618736693231083
+    }
+  },
+  "runtime_seconds": 16.406704902648926
+}

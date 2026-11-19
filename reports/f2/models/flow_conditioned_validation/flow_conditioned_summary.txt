@@ -1,0 +1,20 @@
+FlyWire FAFB v783 — F2.14 super_class condicionada a flow
+
+O TEST principal não foi acessado.
+
+OBJETIVO
+Avaliar se a topologia ainda distingue superclasses depois de fixar a organização grosseira afferent/intrinsic/efferent.
+
+CRITÉRIO DE INCLUSÃO
+>= 20 exemplos no TRAIN dentro do flow.
+
+RF — RESUMO PRINCIPAL
+afferent: BIO=0.704238, REDE=0.796850, BIO+REDE=0.885792, delta=+0.181554
+efferent: BIO=0.632273, REDE=0.976086, BIO+REDE=0.939771, delta=+0.307498
+intrinsic: BIO=0.764992, REDE=0.823163, BIO+REDE=0.903016, delta=+0.138024
+
+Resultados: reports\f2\models\flow_conditioned_validation\flow_conditioned_results.csv
+Por classe: reports\f2\models\flow_conditioned_validation\flow_conditioned_per_class_metrics.csv
+Exclusões: reports\f2\models\flow_conditioned_validation\flow_conditioned_exclusions.csv
+
+Tempo total: 1.66 min

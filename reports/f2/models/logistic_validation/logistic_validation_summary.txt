@@ -1,0 +1,37 @@
+FlyWire FAFB v783 — F2.09 Baselines + Logistic Regression
+
+ESTÁGIO
+Somente seleção em VALIDAÇÃO.
+O conjunto de TESTE NÃO foi avaliado.
+
+Train usado: 97478
+Validation usado: 20890
+Test bloqueado: 20887
+Class weight: balanced
+Solver: lbfgs
+C grid: [0.1, 1.0, 10.0]
+NT imputation seed: 314159
+
+RESULTADOS SELECIONADOS
+majority_global: model=majority_baseline, C=-, macro-F1=0.071726, balanced_acc=0.100000, accuracy=0.559167, weighted_F1=0.401070
+nt_available_lookup: model=conditional_majority_baseline, C=-, macro-F1=0.113392, balanced_acc=0.128630, accuracy=0.576687, weighted_F1=0.453636
+bio_strict: model=logistic_regression_balanced, C=10.0, macro-F1=0.313644, balanced_acc=0.582051, accuracy=0.607563, weighted_F1=0.684845
+bio_plus_availability: model=logistic_regression_balanced, C=10.0, macro-F1=0.335961, balanced_acc=0.639195, accuracy=0.641312, weighted_F1=0.709570
+network_degree_strength: model=logistic_regression_balanced, C=0.1, macro-F1=0.275028, balanced_acc=0.572475, accuracy=0.416419, weighted_F1=0.475708
+network_plus_centrality: model=logistic_regression_balanced, C=0.1, macro-F1=0.338242, balanced_acc=0.616553, accuracy=0.573289, weighted_F1=0.633998
+network_plus_leiden: model=logistic_regression_balanced, C=1.0, macro-F1=0.394226, balanced_acc=0.709720, accuracy=0.683629, weighted_F1=0.722560
+network_full: model=logistic_regression_balanced, C=0.1, macro-F1=0.398841, balanced_acc=0.732829, accuracy=0.702824, weighted_F1=0.747041
+bio_strict_plus_network_full: model=logistic_regression_balanced, C=10.0, macro-F1=0.492297, balanced_acc=0.832581, accuracy=0.829057, weighted_F1=0.860300
+bio_plus_availability_plus_network_full: model=logistic_regression_balanced, C=10.0, macro-F1=0.496491, balanced_acc=0.834332, accuracy=0.832121, weighted_F1=0.862508
+
+REGRAS METODOLÓGICAS
+- seleção pelo macro-F1 de validação;
+- desempate por balanced accuracy e depois menor C;
+- nenhuma métrica do teste foi consultada;
+- BIO/REDE/combinado usam as mesmas linhas congeladas;
+- imputação e scaling ajustados somente no treino;
+- Logistic Regression usa solver=lbfgs e class_weight='balanced';
+- threads nativas BLAS/OpenMP limitadas a 1 por estabilidade/reprodutibilidade;
+- BIO-strict não contém nt_available nem nt_type_score;
+
+Tempo total: 2.83 min

@@ -1,0 +1,11 @@
+column,source,reason,present_in_frozen_bio_table
+flow,classification,Taxonomic/functional grouping directly upstream of super_class.,False
+class,classification,Taxonomic label closely related to super_class.,False
+sub_class,classification,Taxonomic label closely related to super_class.,False
+hemilineage,classification,Biological annotation close to taxonomy; outside the declared BIO baseline.,False
+nerve,classification,Annotation strongly tied to specific superclasses; leakage risk.,False
+group,neurons,Coarse neuron grouping with very high association to super_class; outside declared BIO baseline.,False
+primary_type,consolidated_cell_types,Fine cell-type taxonomy; direct leakage risk.,False
+additional_type(s),consolidated_cell_types,Fine cell-type taxonomy; direct leakage risk.,False
+nt_type,neurons,Final categorical neurotransmitter call excluded in favor of the six probabilistic scores.,False
+nt_type_score,neurons,Deterministically reveals availability of the final nt_type call; observability proxy.,False

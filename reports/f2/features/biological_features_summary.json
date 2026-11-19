@@ -1,0 +1,88 @@
+{
+  "nodes": 139255,
+  "target_classes": 10,
+  "feature_sets": {
+    "bio_morph_side": [
+      "side",
+      "length_nm",
+      "area_nm",
+      "size_nm"
+    ],
+    "bio_nt_probabilities": [
+      "da_avg",
+      "ser_avg",
+      "gaba_avg",
+      "glut_avg",
+      "ach_avg",
+      "oct_avg"
+    ],
+    "bio_strict": [
+      "side",
+      "length_nm",
+      "area_nm",
+      "size_nm",
+      "da_avg",
+      "ser_avg",
+      "gaba_avg",
+      "glut_avg",
+      "ach_avg",
+      "oct_avg"
+    ],
+    "bio_plus_availability": [
+      "side",
+      "length_nm",
+      "area_nm",
+      "size_nm",
+      "da_avg",
+      "ser_avg",
+      "gaba_avg",
+      "glut_avg",
+      "ach_avg",
+      "oct_avg",
+      "nt_available"
+    ],
+    "nt_availability_only": [
+      "nt_available"
+    ]
+  },
+  "source_missingness": {
+    "side_missing": 30,
+    "morphology_rows_missing_any": 9,
+    "nt_type_missing": 19658,
+    "nt_probability_vector_unavailable": 9906,
+    "nt_type_missing_but_probability_vector_valid": 9752
+  },
+  "neurotransmitter_definition": {
+    "nt_available": "1 iff sum(da_avg, ser_avg, gaba_avg, glut_avg, ach_avg, oct_avg) > 0",
+    "valid_probability_sum_min": 0.9799999999999999,
+    "valid_probability_sum_max": 1.0200000000000002,
+    "all_zero_vectors_converted_to_nan_block": true,
+    "nt_type_score_zero_for_every_missing_nt_type": true,
+    "nt_type_score_positive_for_every_present_nt_type": true
+  },
+  "observability_topology_audit": {
+    "prob_unavailable_out_degree_median": 3.0,
+    "prob_available_out_degree_median": 18.0,
+    "prob_unavailable_out_degree_zero_fraction": 0.16283060771249747,
+    "prob_available_out_degree_zero_fraction": 0.000958646761861321
+  },
+  "forbidden_proxy_example": {
+    "group_weighted_purity_to_super_class": 0.9160317403324836
+  },
+  "important_methodological_decisions": [
+    "super_class is stored in a separate target file and never inside the biological feature table.",
+    "The frozen BIO table is whitelist-based, not blacklist-selected at model time.",
+    "flow/class/sub_class/hemilineage/nerve/group/cell-type annotations are excluded to prevent taxonomy leakage.",
+    "nt_type_score is excluded because it explicitly encodes availability of the final nt_type call.",
+    "The six all-zero NT vectors are treated as missing information, not as six biological zero probabilities.",
+    "BIO-strict excludes nt_available, but this only removes the explicit NT-availability indicator; morphology/topology may still carry observability signal.",
+    "NT vector imputation is intentionally deferred to the ML pipeline and must use TRAINING folds only.",
+    "All compared models must use the same root_ids and the same splits."
+  ],
+  "runtime_seconds": 6.411064147949219,
+  "outputs": {
+    "biological_features": "reports/f2/features/node_biological_features.csv.gz",
+    "targets": "reports/f2/features/node_targets.csv.gz",
+    "feature_sets": "reports/f2/features/biological_feature_sets.json"
+  }
+}

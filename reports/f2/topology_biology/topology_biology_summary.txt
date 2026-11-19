@@ -1,0 +1,38 @@
+FlyWire FAFB v783 — topologia × biologia
+
+POPULAÇÃO
+Nós totais: 139255
+Nós ativos usados em NMI/ARI: 138584
+Isolados excluídos de NMI/ARI: 671
+Superclasses: 10
+
+COMUNIDADES × SUPER_CLASS
+LEIDEN
+Comunidades: 234
+NMI (normalização aritmética): 0.333060
+Adjusted Rand Index: 0.212953
+Pureza da partição: 0.802322
+NMI papel modular × super_class: 0.099625
+
+INFOMAP
+Comunidades: 894
+NMI (normalização aritmética): 0.226127
+Adjusted Rand Index: 0.025930
+Pureza da partição: 0.809538
+NMI papel modular × super_class: 0.090699
+
+HOMOFILIA / MIXING POR SUPER_CLASS
+Contagem de arestas:
+Fração observada intra-superclasse: 0.727600
+Fração esperada pelos marginais dirigidos: 0.360347
+Enriquecimento: 2.0192x
+Assortatividade categórica dirigida: 0.574144
+
+Peso sináptico:
+Fração observada intra-superclasse: 0.713285
+Fração esperada pelos marginais dirigidos: 0.345588
+Enriquecimento: 2.0640x
+Assortatividade categórica dirigida: 0.561874
+
+Observação: super_class não foi usada para detectar comunidades nem para definir papéis modulares.
+Tempo total: 0.27 min

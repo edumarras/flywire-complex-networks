@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "universe": {
+    "nodes": 139255,
+    "superclasses": 10,
+    "same_root_id_universe_bio_network_target": true
+  },
+  "main_split": {
+    "design": "single stratified random split",
+    "fractions": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "totals": {
+      "train": 97478,
+      "val": 20890,
+      "test": 20887
+    },
+    "all_classes_present_in_all_splits": true,
+    "side_is_allowed_as_bio_feature": true,
+    "path": "reports/f2/splits/main_split.csv.gz"
+  },
+  "hemisphere_robustness": {
+    "source_train_val_fractions": {
+      "train": 0.85,
+      "val": 0.15
+    },
+    "center_and_missing_side_are_excluded": true,
+    "side_feature_must_be_removed": true,
+    "left_to_right": {
+      "source": "left",
+      "target": "right",
+      "totals": {
+        "train": 59466,
+        "val": 10493,
+        "test": 69093,
+        "excluded": 203
+      },
+      "path": "reports/f2/splits/hemisphere_left_to_right.csv.gz"
+    },
+    "right_to_left": {
+      "source": "right",
+      "target": "left",
+      "totals": {
+        "train": 58730,
+        "val": 10363,
+        "test": 69959,
+        "excluded": 203
+      },
+      "path": "reports/f2/splits/hemisphere_right_to_left.csv.gz"
+    }
+  },
+  "methodological_rules_for_ml": [
+    "The same frozen main split must be used for BIO, NETWORK, and BIO+NETWORK comparisons.",
+    "All imputation, scaling, log transforms, encoding, and any other fitted preprocessing must be learned from training data only.",
+    "Validation data may be used for model/hyperparameter selection; the test set must remain untouched until the final evaluation.",
+    "For hemisphere robustness, side must be removed from the feature set because it defines the domain split itself.",
+    "Center and missing-side neurons remain in the main experiment but are excluded from hemisphere-transfer robustness."
+  ],
+  "runtime_seconds": 2.8919527530670166
+}

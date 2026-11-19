@@ -1,0 +1,70 @@
+FlyWire FAFB v783 — preparação das features biológicas
+
+Nós: 139255
+Classes-alvo: 10
+
+FEATURE SETS
+bio_strict:
+  - side
+  - length_nm
+  - area_nm
+  - size_nm
+  - da_avg
+  - ser_avg
+  - gaba_avg
+  - glut_avg
+  - ach_avg
+  - oct_avg
+
+bio_plus_availability:
+  - side
+  - length_nm
+  - area_nm
+  - size_nm
+  - da_avg
+  - ser_avg
+  - gaba_avg
+  - glut_avg
+  - ach_avg
+  - oct_avg
+  - nt_available
+
+nt_availability_only:
+  - nt_available
+
+MISSINGNESS / DISPONIBILIDADE
+side ausente: 30
+morfologia ausente (qualquer coluna): 9
+nt_type ausente: 19658
+vetor probabilístico NT indisponível (soma=0): 9906
+sem nt_type, mas com vetor probabilístico válido: 9752
+soma dos vetores NT válidos: 0.980 a 1.020
+
+OBSERVABILIDADE × TOPOLOGIA (TODOS OS NÓS)
+out_degree mediano, NT prob indisponível: 3.000
+out_degree mediano, NT prob disponível: 18.000
+fração out_degree=0, NT prob indisponível: 0.162831
+fração out_degree=0, NT prob disponível: 0.000959
+
+ANTI-LEAKAGE
+- super_class fica em node_targets.csv.gz, separado das features.
+- seleção por whitelist explícita.
+- flow, class, sub_class, hemilineage, nerve, group e cell types não entram.
+- nt_type não entra; usamos as seis probabilidades.
+- nt_type_score não entra; ele revela disponibilidade da chamada categórica.
+- pureza ponderada de group em relação a super_class: 0.916032
+
+TRATAMENTO DO NT
+- vetor [0,0,0,0,0,0] é convertido para NaN nas seis colunas.
+- os 9.752 casos sem nt_type mas com vetor válido permanecem com suas probabilidades.
+- nenhuma imputação é feita aqui.
+- na IA, imputar o bloco NT usando SOMENTE o treino da dobra/split.
+- BIO-strict não inclui nt_available.
+- BIO+availability inclui nt_available explicitamente.
+
+LIMITAÇÃO IMPORTANTE
+Remover nt_available elimina o indicador explícito de disponibilidade, mas não garante
+remoção completa do artefato de observabilidade, pois morfologia e topologia também podem
+estar associadas ao grau de reconstrução/proofreading.
+
+Tempo total: 6.42 s

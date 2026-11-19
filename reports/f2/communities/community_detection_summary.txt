@@ -1,0 +1,48 @@
+FlyWire FAFB v783 — detecção de comunidades
+
+PRINCÍPIO METODOLÓGICO
+Nenhum rótulo biológico foi usado na detecção ou seleção das partições.
+Leiden e Infomap usam representações e objetivos adequados a cada método.
+
+GRAFO
+Nós totais: 139255
+Nós ativos usados na detecção: 138584
+Isolados excluídos da detecção: 671
+Arestas dirigidas: 3732460
+Arestas da projeção não dirigida: 3422370
+Peso total de sinapses: 50666648
+
+LEIDEN
+Representação: projeção ponderada não dirigida
+Objetivo: modularidade
+Resolução fixada a priori: 1.0
+Trials independentes: 5
+Melhor trial: 5
+Comunidades: 234
+Comunidades singleton: 0
+Maior comunidade: 33440 (24.130% dos nós ativos)
+Tamanho mediano: 8.000
+Tamanho médio: 592.239
+Modularidade ponderada não dirigida: 0.722536212
+
+INFOMAP
+Representação: grafo ponderado dirigido
+Objetivo: map equation
+Trials internos: 10
+Comunidades: 894
+Comunidades singleton: 2
+Maior comunidade: 7549 (5.447% dos nós ativos)
+Tamanho mediano: 21.000
+Tamanho médio: 155.016
+Codelength: 12.942041565
+Modularidade ponderada dirigida da partição (descritiva): 0.606463320
+Modularidade da mesma partição na projeção não dirigida (descritiva): 0.606338252
+
+OBSERVAÇÕES
+- Isolados recebem community = -1 e não entram na detecção.
+- IDs de comunidade foram renumerados por tamanho: 0 é a maior comunidade.
+- Os números dos IDs não têm significado ordinal.
+- Leiden otimiza modularidade; Infomap otimiza codelength. Os scores não são diretamente comparáveis.
+- NMI/ARI com super_class serão calculados depois, como RESULTADOS, e não usados para ajustar as partições.
+
+Tempo total: 4.92 min

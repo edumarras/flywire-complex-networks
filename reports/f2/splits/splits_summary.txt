@@ -1,0 +1,28 @@
+FlyWire FAFB v783 — splits congelados para IA
+
+Seed: 42
+Universo: 139255 neurônios
+Superclasses: 10
+
+SPLIT PRINCIPAL
+Estratificado por super_class, 70/15/15.
+Train: 97478 (69.9996%)
+Val:   20890 (15.0013%)
+Test:  20887 (14.9991%)
+Todas as 10 classes aparecem nos três splits.
+A mesma partição deve ser usada em BIO, REDE e BIO+REDE.
+
+ROBUSTEZ HEMISFÉRICA
+left -> right: left dividido 85/15 em train/val; right inteiro como test.
+right -> left: right dividido 85/15 em train/val; left inteiro como test.
+center e side ausente são excluídos somente desse teste de robustez.
+IMPORTANTE: side NÃO entra como feature nos experimentos hemisféricos.
+
+REGRAS DE PRÉ-PROCESSAMENTO
+- imputação ajustada somente no treino;
+- scaling ajustado somente no treino;
+- log-transform/encoding definidos pelo pipeline e aplicados sem olhar o teste;
+- validação pode selecionar configuração;
+- test só é usado na avaliação final.
+
+Tempo total: 2.89 s

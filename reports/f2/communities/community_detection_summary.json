@@ -1,0 +1,66 @@
+{
+  "parameters": {
+    "seed": 42,
+    "leiden_trials": 5,
+    "leiden_resolution": 1.0,
+    "infomap_trials": 10,
+    "labels_used_for_detection": false
+  },
+  "graph": {
+    "total_vertices": 139255,
+    "active_vertices": 138584,
+    "isolated_vertices_excluded_from_detection": 671,
+    "directed_edges": 3732460,
+    "undirected_projection_edges": 3422370,
+    "total_synapse_weight": 50666648
+  },
+  "leiden": {
+    "representation": "weighted undirected projection",
+    "objective": "modularity",
+    "resolution": 1.0,
+    "best_trial": 5,
+    "weighted_undirected_modularity": 0.7225362122022674,
+    "communities": 234,
+    "singleton_communities": 0,
+    "communities_size_ge_10": 29,
+    "communities_size_ge_100": 11,
+    "communities_size_ge_1000": 10,
+    "largest_size": 33440,
+    "largest_fraction": 0.2412976967038042,
+    "median_size": 8.0,
+    "mean_size": 592.2393162393163,
+    "p90_size": 10.0,
+    "p95_size": 29.799999999999955,
+    "p99_size": 15397.299999999968
+  },
+  "infomap": {
+    "representation": "weighted directed graph",
+    "objective": "map equation",
+    "trials": 10,
+    "codelength": 12.942041564523961,
+    "weighted_directed_modularity_descriptive": 0.6064633201700811,
+    "weighted_undirected_modularity_same_partition_descriptive": 0.6063382522209753,
+    "runtime_seconds": 158.65776753425598,
+    "communities": 894,
+    "singleton_communities": 2,
+    "communities_size_ge_10": 614,
+    "communities_size_ge_100": 168,
+    "communities_size_ge_1000": 38,
+    "largest_size": 7549,
+    "largest_fraction": 0.0544723777636668,
+    "median_size": 21.0,
+    "mean_size": 155.01565995525726,
+    "p90_size": 263.60000000000036,
+    "p95_size": 874.5999999999967,
+    "p99_size": 2537.549999999983
+  },
+  "notes": [
+    "Community detection uses no biological labels.",
+    "Leiden uses the weighted undirected projection with resolution fixed a priori.",
+    "Infomap uses the weighted directed graph and optimizes map-equation codelength.",
+    "Modularity and codelength are different objectives and should not be compared numerically as if they were the same score.",
+    "Isolated vertices are excluded from community detection and receive community id -1 in the output table.",
+    "Community IDs are renumbered by decreasing size; the integers have no ordinal meaning."
+  ],
+  "runtime_seconds": 294.946857213974
+}

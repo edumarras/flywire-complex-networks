@@ -1,0 +1,57 @@
+{
+  "parameters": {
+    "n_null": 10,
+    "swap_factor": 10.0,
+    "rewire_trials_per_realization": 34223700,
+    "distance_sources": 150,
+    "seed": 42
+  },
+  "graph": {
+    "vertices": 139255,
+    "directed_edges_original": 3732460,
+    "undirected_edges": 3422370,
+    "degree_mean": 49.15256184697138,
+    "degree_second_moment": 10558.383971850202,
+    "degree_max": 8336,
+    "clustering_eligible_vertices": 137993
+  },
+  "real": {
+    "global_transitivity": 0.05461414665605968,
+    "mean_local_clustering": 0.19827657726650233,
+    "components": 875,
+    "largest_component_vertices": 136997,
+    "mean_distance": 3.7938433725558895,
+    "distance_se": 0.03826118220361274,
+    "distance_ci95_low": 3.7188514554368086,
+    "distance_ci95_high": 3.8688352896749705
+  },
+  "analytic_configuration_model": {
+    "expected_transitivity_approx": 0.006678710793853253,
+    "real_to_analytic_ratio": 8.177348644340727
+  },
+  "null_mean": {
+    "global_transitivity": 0.004886682138370671,
+    "mean_local_clustering": 0.006173155793046367,
+    "mean_distance": 3.087020899629344,
+    "largest_component_vertices": 138584.0
+  },
+  "null_std": {
+    "global_transitivity": 2.4962719305827184e-05,
+    "mean_local_clustering": 4.647811456032839e-05,
+    "mean_distance": 0.006726585350566369
+  },
+  "ratios_real_to_null_mean": {
+    "transitivity": 11.176120138288606,
+    "mean_local_clustering": 32.11915978045576,
+    "mean_distance": 1.2289658852038914
+  },
+  "small_world_sigma": {
+    "from_null_means_transitivity": 9.09392219331982,
+    "from_null_means_local_clustering": 26.1351109637409,
+    "per_realization_transitivity_mean": 9.09413462514838,
+    "per_realization_transitivity_std": 0.050258273343680285,
+    "per_realization_local_mean": 26.136450130823714,
+    "per_realization_local_std": 0.20549311643931042
+  },
+  "runtime_seconds": 504.52539229393005
+}

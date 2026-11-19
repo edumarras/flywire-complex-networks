@@ -1,0 +1,42 @@
+FlyWire FAFB v783 — F2.10 Random Forest
+
+ESTÁGIO
+Somente seleção em VALIDAÇÃO.
+O conjunto de TESTE NÃO foi avaliado.
+
+Train usado: 97478
+Validation usado: 20890
+Test bloqueado: 20887
+Árvores por configuração: 300
+Class weight: balanced_subsample
+
+RESULTADOS SELECIONADOS
+bio_strict: config=half_leaf5, max_features=0.5, min_samples_leaf=5, macro-F1=0.559793, balanced_acc=0.558812, accuracy=0.900910, weighted_F1=0.901864
+bio_plus_availability: config=half_leaf5, max_features=0.5, min_samples_leaf=5, macro-F1=0.663406, balanced_acc=0.687521, accuracy=0.907180, weighted_F1=0.909034
+network_degree_strength: config=sqrt_leaf1, max_features=sqrt, min_samples_leaf=1, macro-F1=0.460229, balanced_acc=0.434364, accuracy=0.763188, weighted_F1=0.750958
+network_plus_centrality: config=half_leaf5, max_features=0.5, min_samples_leaf=5, macro-F1=0.580988, balanced_acc=0.624383, accuracy=0.845668, weighted_F1=0.848588
+network_plus_leiden: config=sqrt_leaf1, max_features=sqrt, min_samples_leaf=1, macro-F1=0.713614, balanced_acc=0.664765, accuracy=0.943322, weighted_F1=0.940922
+network_full: config=half_leaf1, max_features=0.5, min_samples_leaf=1, macro-F1=0.784456, balanced_acc=0.743788, accuracy=0.957300, weighted_F1=0.955978
+bio_strict_plus_network_full: config=sqrt_leaf5, max_features=sqrt, min_samples_leaf=5, macro-F1=0.864304, balanced_acc=0.855907, accuracy=0.967975, weighted_F1=0.967973
+bio_plus_availability_plus_network_full: config=half_leaf5, max_features=0.5, min_samples_leaf=5, macro-F1=0.872779, balanced_acc=0.869232, accuracy=0.971039, weighted_F1=0.971043
+
+RF - LOGISTIC (DELTA MACRO-F1)
+bio_plus_availability: +0.327445
+bio_plus_availability_plus_network_full: +0.376288
+bio_strict: +0.246149
+bio_strict_plus_network_full: +0.372007
+network_degree_strength: +0.185201
+network_full: +0.385615
+network_plus_centrality: +0.242746
+network_plus_leiden: +0.319388
+
+REGRAS METODOLÓGICAS
+- seleção pelo macro-F1 da validação;
+- nenhuma métrica do TESTE foi consultada;
+- mesmos train/val congelados do F2.09;
+- class_weight='balanced_subsample';
+- preprocessamento ajustado somente no treino;
+- BIO-strict não contém nt_available nem nt_type_score;
+- grade pequena e previamente definida;
+
+Tempo total: 7.21 min

@@ -1,0 +1,153 @@
+{
+  "experiment": "real_vs_degree_preserving_rewired_unweighted_projection",
+  "test_accessed_for_fit_or_prediction": false,
+  "n_nulls": 10,
+  "rewire_trials_per_edge": 5.0,
+  "rewire_trials_per_null": 17111850,
+  "seed_base": 20261110,
+  "real_graph": {
+    "graph_label": "real",
+    "n_vertices": 139255,
+    "n_edges": 3422370,
+    "n_communities": 899,
+    "modularity": 0.7004017193921078,
+    "mean_local_clustering": 0.19647969356027759,
+    "max_coreness": 67,
+    "runtime_seconds": 21.66273593902588
+  },
+  "graph_metadata": [
+    {
+      "graph_label": "real",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 899,
+      "modularity": 0.7004017193921078,
+      "mean_local_clustering": 0.19647969356027759,
+      "max_coreness": 67,
+      "runtime_seconds": 21.66273593902588
+    },
+    {
+      "graph_label": "null_01",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 678,
+      "modularity": 0.11611451674206329,
+      "mean_local_clustering": 0.006188239286166538,
+      "max_coreness": 47,
+      "runtime_seconds": 841.9606730937958
+    },
+    {
+      "graph_label": "null_02",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 677,
+      "modularity": 0.11659203910396951,
+      "mean_local_clustering": 0.006141213491681552,
+      "max_coreness": 47,
+      "runtime_seconds": 839.5485706329346
+    },
+    {
+      "graph_label": "null_03",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 680,
+      "modularity": 0.11659333902808197,
+      "mean_local_clustering": 0.0060980221655174615,
+      "max_coreness": 47,
+      "runtime_seconds": 1031.0728101730347
+    },
+    {
+      "graph_label": "null_04",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 680,
+      "modularity": 0.1155427129708891,
+      "mean_local_clustering": 0.006105402085552069,
+      "max_coreness": 47,
+      "runtime_seconds": 1145.1130378246307
+    },
+    {
+      "graph_label": "null_05",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 681,
+      "modularity": 0.11714000666139243,
+      "mean_local_clustering": 0.006145834613649526,
+      "max_coreness": 47,
+      "runtime_seconds": 829.8831870555878
+    },
+    {
+      "graph_label": "null_06",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 681,
+      "modularity": 0.1139912456015846,
+      "mean_local_clustering": 0.0061127187483783485,
+      "max_coreness": 47,
+      "runtime_seconds": 623.3413045406342
+    },
+    {
+      "graph_label": "null_07",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 679,
+      "modularity": 0.11676038211037541,
+      "mean_local_clustering": 0.006042690522703611,
+      "max_coreness": 47,
+      "runtime_seconds": 1228.1874158382416
+    },
+    {
+      "graph_label": "null_08",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 680,
+      "modularity": 0.11618078301839078,
+      "mean_local_clustering": 0.006102407130676478,
+      "max_coreness": 47,
+      "runtime_seconds": 916.8511099815369
+    },
+    {
+      "graph_label": "null_09",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 679,
+      "modularity": 0.11663904165821574,
+      "mean_local_clustering": 0.006134711096944332,
+      "max_coreness": 47,
+      "runtime_seconds": 705.4152953624725
+    },
+    {
+      "graph_label": "null_10",
+      "n_vertices": 139255,
+      "n_edges": 3422370,
+      "n_communities": 679,
+      "modularity": 0.11575159855707375,
+      "mean_local_clustering": 0.006143690264511881,
+      "max_coreness": 47,
+      "runtime_seconds": 893.8171091079712
+    }
+  ],
+  "relational_features": [
+    "undirected_degree",
+    "local_clustering",
+    "coreness",
+    "leiden_module_size",
+    "leiden_internal_degree_fraction",
+    "leiden_within_module_degree_z"
+  ],
+  "degree_only_features": [
+    "undirected_degree"
+  ],
+  "scopes": [
+    "global",
+    "intrinsic"
+  ],
+  "frozen_hyperparameters": {
+    "logistic_C": 0.1,
+    "rf_max_features": 0.5,
+    "rf_min_samples_leaf": 1,
+    "rf_n_estimators": 300
+  },
+  "interpretation_boundary": "This audit preserves the exact undirected degree of every node and destroys partner identity / higher-order organization. It does not independently preserve/test directed in/out degree or weighted node strengths.",
+  "runtime_seconds": 9401.857573270798
+}

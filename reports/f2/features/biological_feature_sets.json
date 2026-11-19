@@ -1,0 +1,44 @@
+{
+  "bio_morph_side": [
+    "side",
+    "length_nm",
+    "area_nm",
+    "size_nm"
+  ],
+  "bio_nt_probabilities": [
+    "da_avg",
+    "ser_avg",
+    "gaba_avg",
+    "glut_avg",
+    "ach_avg",
+    "oct_avg"
+  ],
+  "bio_strict": [
+    "side",
+    "length_nm",
+    "area_nm",
+    "size_nm",
+    "da_avg",
+    "ser_avg",
+    "gaba_avg",
+    "glut_avg",
+    "ach_avg",
+    "oct_avg"
+  ],
+  "bio_plus_availability": [
+    "side",
+    "length_nm",
+    "area_nm",
+    "size_nm",
+    "da_avg",
+    "ser_avg",
+    "gaba_avg",
+    "glut_avg",
+    "ach_avg",
+    "oct_avg",
+    "nt_available"
+  ],
+  "nt_availability_only": [
+    "nt_available"
+  ]
+}

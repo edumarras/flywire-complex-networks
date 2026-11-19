@@ -1,0 +1,15 @@
+FlyWire FAFB v783 — F2.11 Diagnóstico por classe em validação
+
+O conjunto de TESTE não foi lido nem avaliado.
+
+Macro-F1: maior inconsistência = 0.000000000000
+Classes com ganho BIO-strict -> BIO-strict+REDE: 10/10
+Maior ganho: motor (+0.748485)
+Menor ganho: optic (+0.036082)
+Melhor F1 combinado: optic (0.986308)
+Pior F1 combinado: descending (0.719101, support=196)
+
+Classes com support <100: endocrine, motor, visual_centrifugal, sensory_ascending
+Classes com support <25: endocrine, motor
+
+Tempo total: 5.87 s

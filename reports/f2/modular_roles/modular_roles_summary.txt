@@ -1,0 +1,46 @@
+FlyWire FAFB v783 — papéis modulares
+
+METODOLOGIA
+Papéis modulares calculados na projeção simples, não dirigida e ponderada.
+Também foram preservadas métricas direcionais de entrada/saída internas e externas.
+Within-module z-score calculado dentro de cada comunidade com desvio-padrão populacional.
+Participation coefficient calculado em versões por grau e por força.
+Papéis R1-R7 seguem os limiares clássicos de Guimerà-Amaral.
+Nenhuma variável biológica ou super_class foi usada.
+
+GRAFO
+Nós: 139255
+Nós ativos: 138584
+Isolados: 671
+Arestas dirigidas: 3732460
+Arestas não dirigidas: 3422370
+
+LEIDEN
+Comunidades: 234
+Fração de arestas internas: 0.823064
+Fração do peso interna: 0.852635
+Participation degree médio: 0.184245
+Participation degree mediano: 0.110727
+Participation strength médio: 0.167281
+Participation strength mediano: 0.078277
+Maior z intramodular (grau): 86.290266
+Maior z intramodular (força): 106.675074
+R5 provincial hubs: 1507
+R6 connector hubs: 864
+R7 kinless hubs: 12
+
+INFOMAP
+Comunidades: 894
+Fração de arestas internas: 0.534229
+Fração do peso interna: 0.627720
+Participation degree médio: 0.516915
+Participation degree mediano: 0.569719
+Participation strength médio: 0.461143
+Participation strength mediano: 0.500815
+Maior z intramodular (grau): 56.878818
+Maior z intramodular (força): 60.953462
+R5 provincial hubs: 401
+R6 connector hubs: 1767
+R7 kinless hubs: 888
+
+Tempo total: 0.24 min

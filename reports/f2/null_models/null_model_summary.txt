@@ -1,0 +1,56 @@
+FlyWire FAFB v783 — modelo nulo degree-preserving
+
+PARÂMETROS
+Nulos: 10
+Swap factor: 10.0
+Tentativas de rewiring por realização: 34223700
+Origens para distância: 150
+Seed base: 42
+
+PROJEÇÃO NÃO DIRIGIDA REAL
+Vértices: 139255
+Arestas: 3422370
+Grau médio: 49.152561847
+<k²>: 10558.383971850
+Vértices com grau >= 2: 137993
+
+REDE REAL
+Transitividade global: 0.054614147
+Clustering local médio (grau >= 2): 0.198276577
+Componentes: 875
+Maior componente: 136997
+Distância média estimada: 3.793843
+IC95% aproximado da distância: [3.718851, 3.868835]
+
+APROXIMAÇÃO ANALÍTICA DO MODELO DE CONFIGURAÇÃO
+Transitividade aproximada: 0.006678711
+Real / analítico: 8.1773x
+
+NULOS — MÉDIA ± DP
+Transitividade: 0.004886682 ± 0.000024963
+Clustering local médio: 0.006173156 ± 0.000046478
+Distância média: 3.087021 ± 0.006727
+
+RAZÕES REAL / NULO
+Transitividade: 11.1761x
+Clustering local médio: 32.1192x
+Distância média: 1.2290x
+
+SMALL-WORLD SIGMA
+Usando transitividade: 9.0939
+Usando clustering local médio: 26.1351
+
+Sigma por realização — transitividade:
+9.0941 ± 0.0503
+
+Sigma por realização — clustering local:
+26.1365 ± 0.2055
+
+Observação metodológica:
+Os nulos são produzidos por rewiring simples da projeção não dirigida.
+O número de vértices, o número de arestas e o grau de CADA vértice são
+verificados após cada realização. A distância é estimada na maior componente
+usando as mesmas origens da rede real sempre que elas permanecem na maior
+componente nula.
+
+Tempo total: 8.41 min

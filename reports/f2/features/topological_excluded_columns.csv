@@ -1,0 +1,36 @@
+column,source_file,reason
+infomap_community,node_modular_roles.csv.gz,ID nominal/arbitrário da comunidade; não deve ser tratado como número.
+infomap_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_external_degree_fraction,node_modular_roles.csv.gz,Redundante: 1 - infomap_internal_degree_fraction para nós ativos.
+infomap_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_external_strength_fraction,node_modular_roles.csv.gz,Redundante: 1 - infomap_internal_strength_fraction para nós ativos.
+infomap_in_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_in_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_in_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_in_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_out_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_out_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_out_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_out_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+infomap_role,node_modular_roles.csv.gz,Rótulo categórico R1-R7 derivado de z e participation; redundante.
+isolated,node_structural_features.csv.gz,Determinístico a partir dos graus; não acrescenta informação.
+leiden_community,node_modular_roles.csv.gz,ID nominal/arbitrário da comunidade; não deve ser tratado como número.
+leiden_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_external_degree_fraction,node_modular_roles.csv.gz,Redundante: 1 - leiden_internal_degree_fraction para nós ativos.
+leiden_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_external_strength_fraction,node_modular_roles.csv.gz,Redundante: 1 - leiden_internal_strength_fraction para nós ativos.
+leiden_in_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_in_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_in_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_in_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_out_external_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_out_external_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_out_internal_degree,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_out_internal_strength,node_modular_roles.csv.gz,"Mantida no relatório descritivo, mas excluída da whitelist de ML para evitar decomposições/redundâncias exatas."
+leiden_role,node_modular_roles.csv.gz,Rótulo categórico R1-R7 derivado de z e participation; redundante.
+total_degree,node_structural_features.csv.gz,Redundante por construção: in_degree + out_degree.
+total_strength,node_structural_features.csv.gz,Redundante por construção: in_strength + out_strength.

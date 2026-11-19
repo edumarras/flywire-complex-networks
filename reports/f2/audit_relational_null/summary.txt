@@ -1,0 +1,25 @@
+F2.15 — Real vs degree-preserving null
+
+TEST FINAL NÃO ACESSADO.
+
+NULL MODEL
+Projeção simples não dirigida; degree-preserving edge swaps; grau de cada nó preservado exatamente.
+
+FEATURES DO CONTROLE
+undirected_degree, local_clustering, coreness, leiden_module_size, leiden_internal_degree_fraction, leiden_within_module_degree_z
+
+RESULTADOS
+global | logistic | real=0.263384 | null=0.128334±0.002982 | delta=+0.135050 | z_desc=45.295
+global | random_forest | real=0.460642 | null=0.156095±0.001695 | delta=+0.304548 | z_desc=179.713
+intrinsic | logistic | real=0.396715 | null=0.185233±0.001409 | delta=+0.211481 | z_desc=150.071
+intrinsic | random_forest | real=0.543057 | null=0.220505±0.001762 | delta=+0.322551 | z_desc=183.011
+
+INTERPRETAÇÃO
+Se real >> null, a sequência de graus não explica sozinha a informação preditiva. A identidade dos parceiros e a organização de ordem superior/mesoscópica carregam sinal.
+Este controle é não dirigido e não ponderado; direção e pesos devem ser auditados separadamente se quisermos uma afirmação específica sobre esses componentes.
+
+Resultados: reports\f2\audit_relational_null\real_vs_degree_preserving_null_results.csv
+Resumo null: reports\f2\audit_relational_null\null_distribution_summary.csv
+Degree checks: reports\f2\audit_relational_null\degree_preservation_checks.csv
+Metadata: reports\f2\audit_relational_null\run_metadata.json
+Runtime total: 156.70 min

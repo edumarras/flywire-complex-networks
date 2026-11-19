@@ -1,0 +1,78 @@
+{
+  "network_degree_strength": [
+    "in_degree",
+    "out_degree",
+    "undirected_degree",
+    "in_strength",
+    "out_strength"
+  ],
+  "network_plus_centrality": [
+    "in_degree",
+    "out_degree",
+    "undirected_degree",
+    "in_strength",
+    "out_strength",
+    "local_clustering",
+    "pagerank_weighted",
+    "coreness"
+  ],
+  "network_plus_leiden": [
+    "in_degree",
+    "out_degree",
+    "undirected_degree",
+    "in_strength",
+    "out_strength",
+    "local_clustering",
+    "pagerank_weighted",
+    "coreness",
+    "leiden_module_size",
+    "leiden_internal_degree_fraction",
+    "leiden_internal_strength_fraction",
+    "leiden_within_module_degree_z",
+    "leiden_within_module_strength_z",
+    "leiden_participation_degree",
+    "leiden_participation_strength"
+  ],
+  "network_full": [
+    "in_degree",
+    "out_degree",
+    "undirected_degree",
+    "in_strength",
+    "out_strength",
+    "local_clustering",
+    "pagerank_weighted",
+    "coreness",
+    "leiden_module_size",
+    "leiden_internal_degree_fraction",
+    "leiden_internal_strength_fraction",
+    "leiden_within_module_degree_z",
+    "leiden_within_module_strength_z",
+    "leiden_participation_degree",
+    "leiden_participation_strength",
+    "infomap_module_size",
+    "infomap_internal_degree_fraction",
+    "infomap_internal_strength_fraction",
+    "infomap_within_module_degree_z",
+    "infomap_within_module_strength_z",
+    "infomap_participation_degree",
+    "infomap_participation_strength"
+  ],
+  "network_modular_leiden_only": [
+    "leiden_module_size",
+    "leiden_internal_degree_fraction",
+    "leiden_internal_strength_fraction",
+    "leiden_within_module_degree_z",
+    "leiden_within_module_strength_z",
+    "leiden_participation_degree",
+    "leiden_participation_strength"
+  ],
+  "network_modular_infomap_only": [
+    "infomap_module_size",
+    "infomap_internal_degree_fraction",
+    "infomap_internal_strength_fraction",
+    "infomap_within_module_degree_z",
+    "infomap_within_module_strength_z",
+    "infomap_participation_degree",
+    "infomap_participation_strength"
+  ]
+}

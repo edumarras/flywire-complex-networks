@@ -1,0 +1,362 @@
+{
+  "stage": "hemisphere_transfer_robustness",
+  "main_random_test_accessed": false,
+  "side_used_as_predictor": false,
+  "training_rule": "for each direction, concatenate source-side frozen train+val; fit with hyperparameters selected on the main validation experiment; evaluate once on the opposite hemisphere",
+  "experiments": [
+    "bio_strict",
+    "bio_plus_availability",
+    "network_full",
+    "bio_strict_plus_network_full",
+    "bio_plus_availability_plus_network_full"
+  ],
+  "directions": [
+    "left_to_right",
+    "right_to_left"
+  ],
+  "results": [
+    {
+      "direction": "left_to_right",
+      "model_family": "logistic",
+      "experiment": "bio_strict",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 4.852666139602661,
+      "accuracy": 0.6404266712981055,
+      "balanced_accuracy": 0.5517856076184854,
+      "macro_f1": 0.32383693464111973,
+      "weighted_f1": 0.7184757863102
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "random_forest",
+      "experiment": "bio_strict",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 6.063318967819214,
+      "accuracy": 0.8939834715528345,
+      "balanced_accuracy": 0.5401389937555389,
+      "macro_f1": 0.5336249726103939,
+      "weighted_f1": 0.8946865994374729
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 5.003893852233887,
+      "accuracy": 0.6827898629383584,
+      "balanced_accuracy": 0.5931897229188403,
+      "macro_f1": 0.348348921009975,
+      "weighted_f1": 0.7465740378147914
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 5.830506086349487,
+      "accuracy": 0.8971675857178006,
+      "balanced_accuracy": 0.6303120029884475,
+      "macro_f1": 0.593514622645905,
+      "weighted_f1": 0.8986282209355076
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "logistic",
+      "experiment": "network_full",
+      "hyperparameter": "C=0.1",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 3.0100038051605225,
+      "accuracy": 0.6175589422951674,
+      "balanced_accuracy": 0.7034856317144715,
+      "macro_f1": 0.3819697865611634,
+      "weighted_f1": 0.6725234408691979
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "random_forest",
+      "experiment": "network_full",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=1;trees=300",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 13.751591682434082,
+      "accuracy": 0.7369487502351902,
+      "balanced_accuracy": 0.661975398680615,
+      "macro_f1": 0.6736683479370523,
+      "weighted_f1": 0.7464217286209225
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "logistic",
+      "experiment": "bio_strict_plus_network_full",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 9.621715784072876,
+      "accuracy": 0.8296933119129289,
+      "balanced_accuracy": 0.8041077777323803,
+      "macro_f1": 0.4947062032478705,
+      "weighted_f1": 0.860206327535901
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "random_forest",
+      "experiment": "bio_strict_plus_network_full",
+      "hyperparameter": "max_features=sqrt;min_samples_leaf=5;trees=300",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 7.839105844497681,
+      "accuracy": 0.9522961805103266,
+      "balanced_accuracy": 0.8245665835965982,
+      "macro_f1": 0.8186571048972338,
+      "weighted_f1": 0.9525761268597623
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 10.281853437423706,
+      "accuracy": 0.8314445747036603,
+      "balanced_accuracy": 0.8040252534256813,
+      "macro_f1": 0.4997545781266456,
+      "weighted_f1": 0.8613702578464023
+    },
+    {
+      "direction": "left_to_right",
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69959,
+      "target_rows": 69093,
+      "fit_seconds": 21.812184810638428,
+      "accuracy": 0.9359993052841822,
+      "balanced_accuracy": 0.8296867794589305,
+      "macro_f1": 0.7894852862782632,
+      "weighted_f1": 0.9367727166621295
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "logistic",
+      "experiment": "bio_strict",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 4.628899812698364,
+      "accuracy": 0.5675324118412213,
+      "balanced_accuracy": 0.550982107524379,
+      "macro_f1": 0.2851739596319363,
+      "weighted_f1": 0.6504326484182952
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "random_forest",
+      "experiment": "bio_strict",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 5.967042922973633,
+      "accuracy": 0.8703240469417802,
+      "balanced_accuracy": 0.5735062361712607,
+      "macro_f1": 0.5513071264299947,
+      "weighted_f1": 0.8742758096110669
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 3.7347991466522217,
+      "accuracy": 0.5876298975113995,
+      "balanced_accuracy": 0.6113251957186667,
+      "macro_f1": 0.3057023326630347,
+      "weighted_f1": 0.6670597566001515
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 6.380495071411133,
+      "accuracy": 0.8747409196815278,
+      "balanced_accuracy": 0.6445038858512724,
+      "macro_f1": 0.6123333007643849,
+      "weighted_f1": 0.8794203205701958
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "logistic",
+      "experiment": "network_full",
+      "hyperparameter": "C=0.1",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 2.929779529571533,
+      "accuracy": 0.700710416100859,
+      "balanced_accuracy": 0.6912653666036361,
+      "macro_f1": 0.3744426829087264,
+      "weighted_f1": 0.7481075140533462
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "random_forest",
+      "experiment": "network_full",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=1;trees=300",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 16.043923377990723,
+      "accuracy": 0.8200946268528709,
+      "balanced_accuracy": 0.6628013276113247,
+      "macro_f1": 0.6088873245123667,
+      "weighted_f1": 0.8256602401436045
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "logistic",
+      "experiment": "bio_strict_plus_network_full",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 10.010651588439941,
+      "accuracy": 0.8017124315670607,
+      "balanced_accuracy": 0.785545705841165,
+      "macro_f1": 0.4504866732772806,
+      "weighted_f1": 0.8427309259229199
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "random_forest",
+      "experiment": "bio_strict_plus_network_full",
+      "hyperparameter": "max_features=sqrt;min_samples_leaf=5;trees=300",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 7.802969932556152,
+      "accuracy": 0.9505281664975199,
+      "balanced_accuracy": 0.8287059004534468,
+      "macro_f1": 0.7988619719246808,
+      "weighted_f1": 0.951493903063252
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "hyperparameter": "C=10.0",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 10.645407438278198,
+      "accuracy": 0.8049286010377507,
+      "balanced_accuracy": 0.7913447079680053,
+      "macro_f1": 0.4526881808435742,
+      "weighted_f1": 0.8452488881292131
+    },
+    {
+      "direction": "right_to_left",
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "hyperparameter": "max_features=0.5;min_samples_leaf=5;trees=300",
+      "source_rows": 69093,
+      "target_rows": 69959,
+      "fit_seconds": 21.771600008010864,
+      "accuracy": 0.9052159121771324,
+      "balanced_accuracy": 0.8236743317793653,
+      "macro_f1": 0.695234149023385,
+      "weighted_f1": 0.9116612405597638
+    }
+  ],
+  "bidirectional_mean": [
+    {
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability",
+      "macro_f1": 0.3270256268365048,
+      "balanced_accuracy": 0.6022574593187535,
+      "accuracy": 0.6352098802248789,
+      "weighted_f1": 0.7068168972074714
+    },
+    {
+      "model_family": "logistic",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "macro_f1": 0.4762213794851099,
+      "balanced_accuracy": 0.7976849806968433,
+      "accuracy": 0.8181865878707055,
+      "weighted_f1": 0.8533095729878077
+    },
+    {
+      "model_family": "logistic",
+      "experiment": "bio_strict",
+      "macro_f1": 0.30450544713652805,
+      "balanced_accuracy": 0.5513838575714323,
+      "accuracy": 0.6039795415696634,
+      "weighted_f1": 0.6844542173642476
+    },
+    {
+      "model_family": "logistic",
+      "experiment": "bio_strict_plus_network_full",
+      "macro_f1": 0.4725964382625756,
+      "balanced_accuracy": 0.7948267417867727,
+      "accuracy": 0.8157028717399948,
+      "weighted_f1": 0.8514686267294105
+    },
+    {
+      "model_family": "logistic",
+      "experiment": "network_full",
+      "macro_f1": 0.3782062347349449,
+      "balanced_accuracy": 0.6973754991590538,
+      "accuracy": 0.6591346791980133,
+      "weighted_f1": 0.7103154774612721
+    },
+    {
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability",
+      "macro_f1": 0.602923961705145,
+      "balanced_accuracy": 0.6374079444198599,
+      "accuracy": 0.8859542526996642,
+      "weighted_f1": 0.8890242707528517
+    },
+    {
+      "model_family": "random_forest",
+      "experiment": "bio_plus_availability_plus_network_full",
+      "macro_f1": 0.7423597176508241,
+      "balanced_accuracy": 0.8266805556191479,
+      "accuracy": 0.9206076087306573,
+      "weighted_f1": 0.9242169786109466
+    },
+    {
+      "model_family": "random_forest",
+      "experiment": "bio_strict",
+      "macro_f1": 0.5424660495201943,
+      "balanced_accuracy": 0.5568226149633998,
+      "accuracy": 0.8821537592473074,
+      "weighted_f1": 0.8844812045242698
+    },
+    {
+      "model_family": "random_forest",
+      "experiment": "bio_strict_plus_network_full",
+      "macro_f1": 0.8087595384109573,
+      "balanced_accuracy": 0.8266362420250225,
+      "accuracy": 0.9514121735039233,
+      "weighted_f1": 0.9520350149615071
+    },
+    {
+      "model_family": "random_forest",
+      "experiment": "network_full",
+      "macro_f1": 0.6412778362247096,
+      "balanced_accuracy": 0.6623883631459698,
+      "accuracy": 0.7785216885440306,
+      "weighted_f1": 0.7860409843822636
+    }
+  ],
+  "runtime_seconds": 203.64525246620178
+}

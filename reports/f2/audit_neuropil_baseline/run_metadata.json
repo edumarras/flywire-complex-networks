@@ -1,0 +1,41 @@
+{
+  "experiment": "neuropil_anatomical_baseline",
+  "test_accessed_for_fit_or_prediction": false,
+  "neuropil_feature_definition": {
+    "connection_rows": 5342446,
+    "total_syn_count_from_rows": 50666648.0,
+    "n_nodes": 139255,
+    "n_neuropils": 79,
+    "n_features": 158,
+    "matrix_nnz": 730261,
+    "zero_out_nodes": 1737,
+    "zero_in_nodes": 9072,
+    "feature_definition": "outgoing and incoming syn_count fractions by neuropil, L1-normalized separately by direction",
+    "includes_total_strength": false,
+    "includes_super_class": false,
+    "includes_flow_as_feature": false,
+    "runtime_seconds": 6.3454203605651855
+  },
+  "n_network_features": 22,
+  "n_neuropil_features": 158,
+  "experiments": [
+    "network_full",
+    "neuropil_only",
+    "network_full_plus_neuropil"
+  ],
+  "scopes": [
+    "global",
+    "intrinsic"
+  ],
+  "frozen_hyperparameters": {
+    "logistic_C": 0.1,
+    "rf_n_estimators": 300,
+    "rf_max_features": 0.5,
+    "rf_min_samples_leaf": 1
+  },
+  "interpretation": {
+    "neuropil_only": "near-definitional anatomical baseline: explicit spatial distribution of incoming/outgoing synaptic weight",
+    "network_plus_neuropil": "tests whether topology adds predictive information after explicit synapse-location information is supplied"
+  },
+  "runtime_seconds": 471.15497636795044
+}

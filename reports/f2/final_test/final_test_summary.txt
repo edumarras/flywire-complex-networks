@@ -1,0 +1,37 @@
+F2.17 — TESTE FINAL CONGELADO
+
+TEST aberto para avaliação confirmatória.
+Nenhum tuning/seleção realizado no TEST.
+
+TRAIN+VAL: 118368
+TEST: 20887
+
+MACRO-F1 FINAL
+
+LOGISTIC
+BIO-strict: 0.311914
+REDE completa: 0.389705
+BIO-strict + REDE: 0.482900
+Ganho REDE sobre BIO: +0.170986
+BIO+availability+REDE: 0.488539
+Ganho availability no combinado: +0.005639
+
+RANDOM_FOREST
+BIO-strict: 0.568126
+REDE completa: 0.785889
+BIO-strict + REDE: 0.849607
+Ganho REDE sobre BIO: +0.281480
+BIO+availability+REDE: 0.859504
+Ganho availability no combinado: +0.009898
+
+ARQUIVOS
+Resultados: reports\f2\final_test\final_test_results.csv
+Por classe: reports\f2\final_test\final_test_per_class_metrics.csv
+Predições: reports\f2\final_test\final_test_predictions.csv.gz
+Confusion matrices: reports\f2\final_test\final_test_confusion_matrices.csv
+JSON: reports\f2\final_test\final_test_summary.json
+
+Tempo total: 4.13 min
+
+IMPORTANTE
+Após esta execução, não alterar features, preprocessing, hiperparâmetros ou seleção de modelo com base no TEST.

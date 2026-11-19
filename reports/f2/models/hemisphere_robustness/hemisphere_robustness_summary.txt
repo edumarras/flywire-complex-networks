@@ -1,0 +1,45 @@
+FlyWire FAFB v783 — F2.12 Robustez hemisférica
+
+DESENHO
+- hiperparâmetros congelados da validação principal;
+- side removida de todas as features;
+- source = train + val do hemisfério de origem;
+- target = hemisfério oposto;
+- center/unknown excluídos desta robustez;
+- teste principal 70/15/15 permanece intocado.
+
+RESULTADOS POR DIREÇÃO
+left_to_right | logistic | bio_strict | macro-F1=0.323837 | balanced_acc=0.551786 | accuracy=0.640427
+left_to_right | random_forest | bio_strict | macro-F1=0.533625 | balanced_acc=0.540139 | accuracy=0.893983
+left_to_right | logistic | bio_plus_availability | macro-F1=0.348349 | balanced_acc=0.593190 | accuracy=0.682790
+left_to_right | random_forest | bio_plus_availability | macro-F1=0.593515 | balanced_acc=0.630312 | accuracy=0.897168
+left_to_right | logistic | network_full | macro-F1=0.381970 | balanced_acc=0.703486 | accuracy=0.617559
+left_to_right | random_forest | network_full | macro-F1=0.673668 | balanced_acc=0.661975 | accuracy=0.736949
+left_to_right | logistic | bio_strict_plus_network_full | macro-F1=0.494706 | balanced_acc=0.804108 | accuracy=0.829693
+left_to_right | random_forest | bio_strict_plus_network_full | macro-F1=0.818657 | balanced_acc=0.824567 | accuracy=0.952296
+left_to_right | logistic | bio_plus_availability_plus_network_full | macro-F1=0.499755 | balanced_acc=0.804025 | accuracy=0.831445
+left_to_right | random_forest | bio_plus_availability_plus_network_full | macro-F1=0.789485 | balanced_acc=0.829687 | accuracy=0.935999
+right_to_left | logistic | bio_strict | macro-F1=0.285174 | balanced_acc=0.550982 | accuracy=0.567532
+right_to_left | random_forest | bio_strict | macro-F1=0.551307 | balanced_acc=0.573506 | accuracy=0.870324
+right_to_left | logistic | bio_plus_availability | macro-F1=0.305702 | balanced_acc=0.611325 | accuracy=0.587630
+right_to_left | random_forest | bio_plus_availability | macro-F1=0.612333 | balanced_acc=0.644504 | accuracy=0.874741
+right_to_left | logistic | network_full | macro-F1=0.374443 | balanced_acc=0.691265 | accuracy=0.700710
+right_to_left | random_forest | network_full | macro-F1=0.608887 | balanced_acc=0.662801 | accuracy=0.820095
+right_to_left | logistic | bio_strict_plus_network_full | macro-F1=0.450487 | balanced_acc=0.785546 | accuracy=0.801712
+right_to_left | random_forest | bio_strict_plus_network_full | macro-F1=0.798862 | balanced_acc=0.828706 | accuracy=0.950528
+right_to_left | logistic | bio_plus_availability_plus_network_full | macro-F1=0.452688 | balanced_acc=0.791345 | accuracy=0.804929
+right_to_left | random_forest | bio_plus_availability_plus_network_full | macro-F1=0.695234 | balanced_acc=0.823674 | accuracy=0.905216
+
+MÉDIA BIDIRECIONAL
+logistic | bio_plus_availability | macro-F1=0.327026 | balanced_acc=0.602257 | accuracy=0.635210
+logistic | bio_plus_availability_plus_network_full | macro-F1=0.476221 | balanced_acc=0.797685 | accuracy=0.818187
+logistic | bio_strict | macro-F1=0.304505 | balanced_acc=0.551384 | accuracy=0.603980
+logistic | bio_strict_plus_network_full | macro-F1=0.472596 | balanced_acc=0.794827 | accuracy=0.815703
+logistic | network_full | macro-F1=0.378206 | balanced_acc=0.697375 | accuracy=0.659135
+random_forest | bio_plus_availability | macro-F1=0.602924 | balanced_acc=0.637408 | accuracy=0.885954
+random_forest | bio_plus_availability_plus_network_full | macro-F1=0.742360 | balanced_acc=0.826681 | accuracy=0.920608
+random_forest | bio_strict | macro-F1=0.542466 | balanced_acc=0.556823 | accuracy=0.882154
+random_forest | bio_strict_plus_network_full | macro-F1=0.808760 | balanced_acc=0.826636 | accuracy=0.951412
+random_forest | network_full | macro-F1=0.641278 | balanced_acc=0.662388 | accuracy=0.778522
+
+Tempo total: 3.39 min

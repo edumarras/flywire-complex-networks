@@ -1,0 +1,24 @@
+FlyWire FAFB v783 — métricas estruturais F2
+
+Nós: 139.255
+Arestas dirigidas: 3.732.460
+Isolados: 671
+
+Pesos das arestas
+Mínimo: 5
+Máximo: 2.633
+Média: 13,5746
+Mediana: 8,0000
+Sinapses totais: 50.666.648
+Peso exatamente 5: 19.57%
+Peso <= 10: 63.41%
+
+PageRank ponderado
+Direcionado: sim
+Damping: 0,85
+Soma: 1.000000000000
+Máximo: 0.00178389481073
+
+Coreness
+Representação: projeção simples não dirigida
+k-core máximo: 67

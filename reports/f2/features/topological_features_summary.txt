@@ -1,0 +1,53 @@
+FlyWire FAFB v783 — congelamento das features topológicas
+
+Nós: 139255
+Features congeladas: 22
+
+GRUPOS
+degree_strength (5): in_degree, out_degree, undirected_degree, in_strength, out_strength
+centrality_local (3): local_clustering, pagerank_weighted, coreness
+modular_leiden (7): leiden_module_size, leiden_internal_degree_fraction, leiden_internal_strength_fraction, leiden_within_module_degree_z, leiden_within_module_strength_z, leiden_participation_degree, leiden_participation_strength
+modular_infomap (7): infomap_module_size, infomap_internal_degree_fraction, infomap_internal_strength_fraction, infomap_within_module_degree_z, infomap_within_module_strength_z, infomap_participation_degree, infomap_participation_strength
+
+AUDITORIA
+NaN: 0
+Infinito: 0
+root_id duplicado: 0
+Features constantes: 0
+Pares com |Spearman| >= 0.95: 9
+
+DECISÕES
+- total_degree e total_strength excluídos por redundância exata.
+- isolated excluído porque é determinístico a partir dos graus.
+- IDs Leiden/Infomap excluídos: são rótulos nominais arbitrários.
+- R1-R7 excluídos: derivam de z intramodular e participation.
+- Conectividades brutas intra/intermódulo permanecem nos relatórios descritivos, mas não entram na whitelist de ML.
+- Nenhum rótulo biológico ou super_class está presente na tabela congelada.
+- Transformações/normalização serão ajustadas somente no treino durante a etapa de IA.
+
+CONJUNTO PRINCIPAL PARA IA
+network_full:
+  - in_degree
+  - out_degree
+  - undirected_degree
+  - in_strength
+  - out_strength
+  - local_clustering
+  - pagerank_weighted
+  - coreness
+  - leiden_module_size
+  - leiden_internal_degree_fraction
+  - leiden_internal_strength_fraction
+  - leiden_within_module_degree_z
+  - leiden_within_module_strength_z
+  - leiden_participation_degree
+  - leiden_participation_strength
+  - infomap_module_size
+  - infomap_internal_degree_fraction
+  - infomap_internal_strength_fraction
+  - infomap_within_module_degree_z
+  - infomap_within_module_strength_z
+  - infomap_participation_degree
+  - infomap_participation_strength
+
+Tempo total: 7.85 s

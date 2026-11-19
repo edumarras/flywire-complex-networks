@@ -1,0 +1,31 @@
+{
+  "stage": "validation_per_class_diagnostics_only",
+  "test_set_accessed": false,
+  "macro_f1_consistency_max_abs_difference": 1.1102230246251565e-16,
+  "classes_improved_bio_to_bio_plus_network": 10,
+  "largest_gain_class": "motor",
+  "largest_gain": 0.7484848484848485,
+  "smallest_gain_class": "optic",
+  "smallest_gain": 0.03608180865694077,
+  "best_combined_class": "optic",
+  "best_combined_f1": 0.9863084474296048,
+  "worst_combined_class": "descending",
+  "worst_combined_f1": 0.7191011235955056,
+  "worst_combined_support": 196,
+  "rare_classes_support_lt_100": [
+    "endocrine",
+    "motor",
+    "visual_centrifugal",
+    "sensory_ascending"
+  ],
+  "very_rare_classes_support_lt_25": [
+    "endocrine",
+    "motor"
+  ],
+  "figures": {
+    "rf_heatmap": "reports\\f2\\models\\validation_diagnostics\\figures\\rf_per_class_f1_heatmap.png",
+    "network_gain": "reports\\f2\\models\\validation_diagnostics\\figures\\rf_gain_network_over_bio_by_class.png",
+    "support_vs_f1": "reports\\f2\\models\\validation_diagnostics\\figures\\rf_support_vs_f1_combined.png"
+  },
+  "runtime_seconds": 5.869648218154907
+}

@@ -1,0 +1,8 @@
+infomap_role,ascending,central,descending,endocrine,motor,optic,sensory,sensory_ascending,visual_centrifugal,visual_projection
+R1_ultra_peripheral,93,2584,22,32,12,2029,7754,131,5,11
+R2_peripheral,827,17068,569,39,66,37103,7325,330,131,2182
+R3_nonhub_connector,613,8917,457,8,25,28066,1302,94,159,3884
+R4_nonhub_kinless,148,2681,137,1,0,9093,96,8,167,1359
+R5_provincial_hub,9,276,8,0,0,89,0,0,0,19
+R6_connector_hub,19,633,79,0,6,859,0,0,13,158
+R7_kinless_hub,7,176,18,0,0,573,0,0,45,69

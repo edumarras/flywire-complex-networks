@@ -1,0 +1,118 @@
+{
+  "audit_timestamp_utc": "2026-11-11T01:13:43.170503+00:00",
+  "target": {
+    "rows": 139255,
+    "superclasses": 10,
+    "flows": 3,
+    "classification_sha256": "e946b552f4056dfc977707be0674609832c3f64332a22d69dc0d9615e7aae663",
+    "classification_uncompressed_sha256": "d941a74188476d60a06dfef7c5130871edbfe9fca77cda571f81f7b9726a184c",
+    "superclass_counts": {
+      "optic": 77873,
+      "central": 32381,
+      "sensory": 16938,
+      "visual_projection": 7684,
+      "ascending": 1750,
+      "descending": 1305,
+      "sensory_ascending": 612,
+      "visual_centrifugal": 522,
+      "motor": 110,
+      "endocrine": 80
+    }
+  },
+  "flow_relationship": {
+    "superclasses_with_single_flow_only": 9,
+    "total_superclasses": 10,
+    "note": "flow é upstream de super_class; análise condicional por flow é obrigatória para interpretação fina."
+  },
+  "graph_lineage": {
+    "raw_connection_columns": [
+      "pre_root_id",
+      "post_root_id",
+      "neuropil",
+      "syn_count",
+      "nt_type"
+    ],
+    "processed_edge_columns": [
+      "pre_root_id",
+      "post_root_id",
+      "weight"
+    ],
+    "neuropil_used_as_topological_feature": false,
+    "edge_nt_type_used_as_topological_feature": false
+  },
+  "frozen_topology": {
+    "n_features": 22,
+    "features": [
+      "in_degree",
+      "out_degree",
+      "undirected_degree",
+      "in_strength",
+      "out_strength",
+      "local_clustering",
+      "pagerank_weighted",
+      "coreness",
+      "leiden_module_size",
+      "leiden_internal_degree_fraction",
+      "leiden_internal_strength_fraction",
+      "leiden_within_module_degree_z",
+      "leiden_within_module_strength_z",
+      "leiden_participation_degree",
+      "leiden_participation_strength",
+      "infomap_module_size",
+      "infomap_internal_degree_fraction",
+      "infomap_internal_strength_fraction",
+      "infomap_within_module_degree_z",
+      "infomap_within_module_strength_z",
+      "infomap_participation_degree",
+      "infomap_participation_strength"
+    ],
+    "forbidden_fields_present": []
+  },
+  "code_lineage": {
+    "complete": true,
+    "missing_scripts": [],
+    "checks": [
+      {
+        "script": "f1_02_build_graph.py",
+        "exists": true,
+        "forbidden_source_references": "",
+        "passes": true
+      },
+      {
+        "script": "f2_01_structural_metrics.py",
+        "exists": true,
+        "forbidden_source_references": "",
+        "passes": true
+      },
+      {
+        "script": "f2_03_communities.py",
+        "exists": true,
+        "forbidden_source_references": "",
+        "passes": true
+      },
+      {
+        "script": "f2_04_modular_roles.py",
+        "exists": true,
+        "forbidden_source_references": "",
+        "passes": true
+      },
+      {
+        "script": "f2_06_build_topological_features.py",
+        "exists": true,
+        "forbidden_source_references": "",
+        "passes": true
+      }
+    ]
+  },
+  "technical_leakage_conclusion": {
+    "pass": true,
+    "statement": "Nenhum target/campo taxonômico direto está na tabela topológica congelada; o grafo processado contém apenas IDs e peso sináptico agregado. Isso sustenta ausência de leakage DIRETO, mas não prova independência conceitual entre super_class e anatomia conectômica."
+  },
+  "next_required_controls": [
+    "fechar versão/proveniência das anotações hierárquicas",
+    "documentar definição de cada super_class",
+    "predizer super_class condicionada a flow",
+    "rede real vs degree-preserving rewired",
+    "baseline anatômico por neuropil"
+  ]
+}

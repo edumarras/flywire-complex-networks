@@ -1,0 +1,22 @@
+F2.16 — Baseline anatômico por neuropil
+
+TEST FINAL NÃO ACESSADO.
+
+Features neuropil = fração do syn_count de INPUT e OUTPUT em cada neuropil, normalizada separadamente por direção.
+Força total NÃO entra neste baseline; apenas distribuição espacial.
+
+RESULTADOS
+global | logistic | REDE=0.357613 | NEUROPIL=0.500599 | REDE+NEUROPIL=0.650690 | ganho_REDE_sobre_NEUROPIL=+0.150090
+global | random_forest | REDE=0.788392 | NEUROPIL=0.624442 | REDE+NEUROPIL=0.851357 | ganho_REDE_sobre_NEUROPIL=+0.226916
+intrinsic | logistic | REDE=0.557440 | NEUROPIL=0.825600 | REDE+NEUROPIL=0.890053 | ganho_REDE_sobre_NEUROPIL=+0.064453
+intrinsic | random_forest | REDE=0.820343 | NEUROPIL=0.868643 | REDE+NEUROPIL=0.936615 | ganho_REDE_sobre_NEUROPIL=+0.067972
+
+LEITURA
+Se NEUROPIL >> REDE, a anatomia espacial explícita está mais próxima da definição do target, como esperado.
+Se REDE+NEUROPIL > NEUROPIL, a topologia contém informação incremental mesmo controlando localização anatômica explícita.
+
+Resultados: reports\f2\audit_neuropil_baseline\neuropil_baseline_results.csv
+Resumo: reports\f2\audit_neuropil_baseline\neuropil_baseline_summary.csv
+Manifesto neuropil: reports\f2\audit_neuropil_baseline\neuropil_feature_manifest.csv
+Metadata: reports\f2\audit_neuropil_baseline\run_metadata.json
+Runtime total: 7.85 min

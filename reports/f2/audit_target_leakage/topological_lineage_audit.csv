@@ -1,0 +1,6 @@
+script,exists,forbidden_source_references,passes
+f1_02_build_graph.py,True,,True
+f2_01_structural_metrics.py,True,,True
+f2_03_communities.py,True,,True
+f2_04_modular_roles.py,True,,True
+f2_06_build_topological_features.py,True,,True

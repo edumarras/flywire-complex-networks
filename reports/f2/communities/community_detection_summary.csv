@@ -1,0 +1,3 @@
+algorithm,representation,primary_objective,communities,singleton_communities,largest_size,largest_fraction_active,median_size,mean_size,primary_score,primary_score_name,descriptive_modularity,descriptive_modularity_type
+leiden,weighted undirected projection,modularity,234,0,33440,0.2412976967038042,8.0,592.2393162393163,0.7225362122022674,weighted_undirected_modularity,0.7225362122022674,weighted_undirected
+infomap,weighted directed graph,map equation,894,2,7549,0.0544723777636668,21.0,155.01565995525726,12.942041564523961,codelength_lower_is_better,0.6064633201700811,weighted_directed

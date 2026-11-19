@@ -1,0 +1,23 @@
+FlyWire FAFB v783 — auditoria de proveniência do target e leakage
+
+rows: 139255
+superclasses: 10
+flows: 3
+classification sha256: e946b552f4056dfc977707be0674609832c3f64332a22d69dc0d9615e7aae663
+classification payload sha256: d941a74188476d60a06dfef7c5130871edbfe9fca77cda571f81f7b9726a184c
+
+GRAFO REDE:
+raw columns: ['pre_root_id', 'post_root_id', 'neuropil', 'syn_count', 'nt_type']
+processed columns: ['pre_root_id', 'post_root_id', 'weight']
+neuropil usado como feature topológica: NÃO
+nt_type da aresta usado como feature topológica: NÃO
+
+features topológicas congeladas: 22
+campos proibidos presentes: nenhum
+
+FLOW: 9/10 superclasses aparecem em um único flow.
+=> controle condicionado por flow é obrigatório.
+
+CONCLUSÃO TÉCNICA:
+PASS — não há evidência de leakage DIRETO.
+Isto NÃO estabelece independência conceitual entre super_class e anatomia/conectividade.

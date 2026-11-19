@@ -1,0 +1,2 @@
+flow,super_class,train_support,reason
+intrinsic,motor,2,train_support < 20
